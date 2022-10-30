@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Automatic_Artist_Remixer
 {
@@ -70,24 +69,24 @@ namespace Automatic_Artist_Remixer
 
             for (int i = 0; i < additionalTagCount; i++)
             {
-                appendTags(promptBuilder, targetList, random);
+                AppendTags(promptBuilder, targetList, random);
             }
 
             if (shouldAddThemeAndStyle)
             {
-                appendTags(promptBuilder, themeAndStyleList, random);
+                AppendTags(promptBuilder, themeAndStyleList, random);
             }
 
             if (shouldAddCameraAndLighting)
             {
-                appendTags(promptBuilder, cameraAndLightingList, random);
+                AppendTags(promptBuilder, cameraAndLightingList, random);
             }
 
             Console.WriteLine("Your prompt is:");
             Console.WriteLine(promptBuilder);
         }
 
-        static void appendTags(StringBuilder promptBuilder, List<string> targetList, Random random)
+        static void AppendTags(StringBuilder promptBuilder, List<string> targetList, Random random)
         {
             bool isStrengthen = random.NextDouble() > 0.5; // 半々で強化か弱化します
             int numberOfBrackets = random.Next(21); // 最大20までやります
