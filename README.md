@@ -3,7 +3,7 @@ WELCOME TO MADNESS!
 
 Madness Prompter is a prompt generator that will lead you to a completely new and unexpected styling, targeted for [NovelAIDiffusion](https://novelai.net/image).
 
-You can try the online version [here](https://paiza.io/projects/Dg8vHzCE2-yPE83gTdv8Bw).
+You can try the online version [here](https://replit.com/@ThePioneerJP/Madness-Prompter).
 - Since the lists have gotten too big, you may want to try the [altenative link](https://www.jdoodle.com/a/5ogx) if not working, or paste the source code on [another environment](https://www.tutorialspoint.com/online_csharp_compiler.php).
 
 # For developers
